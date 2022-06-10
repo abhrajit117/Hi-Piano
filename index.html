@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/nav.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hi-Piano</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(76, 9, 121, 1) 0%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/nav.png"
+            alt="nav"
+            height="30px"
+            width="25px"
+            style="margin: 0px 10px 0px 10px"
+          /><span style="font-weight: 700; color: rgb(255, 255, 255)"
+            >Hi-Piano</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavDropdown"
+          style="font-weight: 600"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Me
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">GitHub</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="welcome">Welcome to Hi-Piano</div>
+    <div class="piano">
+      <div class="white keys fed1"></div>
+      <div data-key="65" class="black keys"><kbd>A</kbd></div>
+      <div data-key="90" class="white keys"><kbd>Z</kbd></div>
+      <div data-key="83" class="black keys"><kbd>S</kbd></div>
+      <div data-key="88" class="white keys"><kbd>X</kbd></div>
+      <div data-key="67" class="white keys"><kbd>C</kbd></div>
+      <div data-key="70" class="black keys"><kbd>F</kbd></div>
+      <div data-key="86" class="white keys"><kbd>V</kbd></div>
+      <div data-key="71" class="black keys"><kbd>G</kbd></div>
+      <div data-key="66" class="white keys"><kbd>B</kbd></div>
+      <div data-key="78" class="white keys"><kbd>N</kbd></div>
+      <div data-key="74" class="black keys"><kbd>J</kbd></div>
+      <div data-key="77" class="white keys"><kbd>M</kbd></div>
+      <div data-key="75" class="black keys"><kbd>K</kbd></div>
+      <div data-key="108" class="white keys"><kbd>,</kbd></div>
+      <div data-key="76" class="black keys"><kbd>L</kbd></div>
+      <div data-key="190" class="white keys"><kbd>.</kbd></div>
+      <div data-key="81" class="white keys"><kbd>Q</kbd></div>
+      <div data-key="50" class="black keys"><kbd>2</kbd></div>
+      <div data-key="87" class="white keys"><kbd>W</kbd></div>
+      <div data-key="51" class="black keys"><kbd>3</kbd></div>
+      <div data-key="69" class="white keys"><kbd>E</kbd></div>
+      <div data-key="82" class="white keys"><kbd>R</kbd></div>
+      <div data-key="53" class="black keys"><kbd>5</kbd></div>
+      <div data-key="84" class="white keys"><kbd>T</kbd></div>
+      <div data-key="54" class="black keys"><kbd>6</kbd></div>
+      <div data-key="89" class="white keys"><kbd>Y</kbd></div>
+      <div data-key="55" class="black keys"><kbd>7</kbd></div>
+      <div data-key="85" class="white keys"><kbd>U</kbd></div>
+      <div data-key="73" class="white keys"><kbd>I</kbd></div>
+      <div data-key="57" class="black keys"><kbd>9</kbd></div>
+      <div data-key="79" class="white keys"><kbd>O</kbd></div>
+      <div data-key="48" class="black keys"><kbd>0</kbd></div>
+      <div data-key="80" class="white keys"><kbd>P</kbd></div>
+      <div class="white keys fed2"></div>
+    </div>
+
+    <audio data-key="65" id="65" src="sounds/33.mp3"></audio>
+    <audio data-key="90" id="90" src="sounds/32.mp3"></audio>
+    <audio data-key="83" id="83" src="sounds/31.mp3"></audio>
+    <audio data-key="88" id="88" src="sounds/30.mp3"></audio>
+    <audio data-key="67" id="67" src="sounds/29.mp3"></audio>
+    <audio data-key="70" id="70" src="sounds/28.mp3"></audio>
+    <audio data-key="86" id="86" src="sounds/27.mp3"></audio>
+    <audio data-key="71" id="71" src="sounds/26.mp3"></audio>
+    <audio data-key="66" id="66" src="sounds/25.mp3"></audio>
+    <audio data-key="78" id="78" src="sounds/24.mp3"></audio>
+    <audio data-key="74" id="74" src="sounds/23.mp3"></audio>
+    <audio data-key="77" id="77" src="sounds/22.mp3"></audio>
+    <audio data-key="75" id="75" src="sounds/21.mp3"></audio>
+    <audio data-key="108" id="108" src="sounds/20.mp3"></audio>
+    <audio data-key="76" id="76" src="sounds/19.mp3"></audio>
+    <audio data-key="190" id="190" src="sounds/18.mp3"></audio>
+    <audio data-key="81" id="81" src="sounds/17.mp3"></audio>
+    <audio data-key="50" id="50" src="sounds/16.mp3"></audio>
+    <audio data-key="87" id="87" src="sounds/15.mp3"></audio>
+    <audio data-key="51" id="51" src="sounds/14.mp3"></audio>
+    <audio data-key="69" id="69" src="sounds/13.mp3"></audio>
+    <audio data-key="82" id="82" src="sounds/12.mp3"></audio>
+    <audio data-key="53" id="53" src="sounds/11.mp3"></audio>
+    <audio data-key="84" id="84" src="sounds/10.mp3"></audio>
+    <audio data-key="54" id="54" src="sounds/9.mp3"></audio>
+    <audio data-key="89" id="89" src="sounds/8.mp3"></audio>
+    <audio data-key="55" id="55" src="sounds/7.mp3"></audio>
+    <audio data-key="85" id="85" src="sounds/6.mp3"></audio>
+    <audio data-key="73" id="73" src="sounds/5.mp3"></audio>
+    <audio data-key="57" id="57" src="sounds/4.mp3"></audio>
+    <audio data-key="79" id="79" src="sounds/3.mp3"></audio>
+    <audio data-key="48" id="48" src="sounds/2.mp3"></audio>
+    <audio data-key="80" id="80" src="sounds/1.mp3"></audio>
+
+    <div class="footer">
+      Hi-Piano &nbsp;&nbsp; |&nbsp;&nbsp; &#169;copyright 2022
+      &nbsp;&nbsp;@the_happy_engineer&nbsp;&nbsp;&nbsp;&nbsp;
+      <span
+        ><a href="http://" target="_blank"
+          ><img src="./images/github.svg" alt="GitHub" /></a></span
+      >&emsp;&emsp;
+      <span
+        ><a href="http://" target="_blank"
+          ><img src="./images/face.svg" alt="Facebook" /></a></span
+      >&emsp;&emsp;
+      <span
+        ><a href="http://" target="_blank"
+          ><img src="./images/insta.svg" alt="Instagram" /></a></span
+      >&emsp;&emsp;
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e09548dce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
