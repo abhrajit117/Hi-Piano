@@ -125,7 +125,7 @@ body{
    }
         @media (max-width: 600px) {
           .welcome{
-                margin: 0px 10px 150px 10px;
+                margin: 0px 10px 0px 10px;
           }
         }
 .footer{
