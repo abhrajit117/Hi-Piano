@@ -90,7 +90,15 @@ body{
       color: hsla(0, 0%, 0%, 0.438);
       background-color: #ffffff00;
       font-weight: 800;
+      
   }
+         @media (max-width: 1080px) {
+          
+    
+         .white>kbd {
+             top: 320px;
+         }
+        }
    .black:hover{
     
         background: #525252;
