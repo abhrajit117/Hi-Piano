@@ -13,13 +13,13 @@ body{
 
  .piano{
      display: flex;
-    margin: 0px 8% 130px 8%;
+    margin: 0px 10% 130px 10%;
  }  
- @media (max-width: 600px){ 
+ /* @media (max-width: 600px){ 
     .piano{
         margin: 0px 10px 150px 10px;
-    }
- }
+    } */
+ /* } */
    .keys{
     height: calc(var(--width)*5);
     width: var(--width);
@@ -111,7 +111,7 @@ body{
                rgba(0, 212, 255, 1) 0%,
                rgba(76, 9, 121, 1) 100%,
                rgba(2, 0, 36, 1) 100%);
-       margin: 50px 8% 0px 8%;
+       margin: 50px 13% 0px 10%;
        padding: 10px;
        font-size: 30px;
        text-align: center;
@@ -123,11 +123,11 @@ body{
        color: aliceblue;
        text-shadow: 10px;
    }
-        @media (max-width: 600px) {
+        /* @media (max-width: 600px) {
           .welcome{
                 margin: 0px 10px 0px 10px;
           }
-        }
+        } */
 .footer{
         background: rgb(0, 212, 255);
         background: linear-gradient(90deg,
