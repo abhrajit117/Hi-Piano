@@ -13,14 +13,10 @@ body{
 
  .piano{
      display: flex;
-   
+    margin: 0px 8% 130px 8%;
  }  
- @media screen {
-    .piano {
-        max-width: 600px;
-    
-        }
-     
+ @media screen (max-width: 600px){ 
+    margin: 0px 10px 150px 10px;
  }
    .keys{
     height: calc(var(--width)*5);
