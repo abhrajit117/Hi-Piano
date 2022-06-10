@@ -15,8 +15,10 @@ body{
      display: flex;
     margin: 0px 8% 130px 8%;
  }  
- @media screen (max-width: 600px){ 
-    margin: 0px 10px 150px 10px;
+ @media (max-width: 600px){ 
+    .piano{
+        margin: 0px 10px 150px 10px;
+    }
  }
    .keys{
     height: calc(var(--width)*5);
@@ -121,6 +123,11 @@ body{
        color: aliceblue;
        text-shadow: 10px;
    }
+        @media (max-width: 600px) {
+          .welcome{
+                margin: 0px 10px 150px 10px;
+          }
+        }
 .footer{
         background: rgb(0, 212, 255);
         background: linear-gradient(90deg,
